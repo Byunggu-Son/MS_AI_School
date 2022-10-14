@@ -25,7 +25,8 @@ while True:
 
             break
         game_count = game_count + 1
-
+    except:
+        print('숫자만 입력해주세요!!') #예외처리를 통해 숫자 외에는 경고문.
 
 
     

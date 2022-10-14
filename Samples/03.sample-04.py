@@ -13,7 +13,7 @@ with open('site_list.txt','rt',encoding='UTF8') as f:# with는 블럭으로 파�
     read_lines = f.readlines() #라인 단위로 읽음
 
     for line in read_lines:
-        line = line.strip() #문자 외에 정리
+        line = line.strip() #strip으로 문자 외에 정리
         print(line)
 
         qr_data = line

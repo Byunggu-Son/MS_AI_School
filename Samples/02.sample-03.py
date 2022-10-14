@@ -1,4 +1,4 @@
-from gtts import gTTS #gTTS가 크기 때문에 gTTS에서 필요한 것만 가져옴
+from gtts import gTTS #gtts가 크기 때문에, gtts패키지에서 gTTS모듈만을 가져옴
 from playsound import playsound
 import os
 
@@ -10,4 +10,4 @@ tts = gTTS(text = text, lang = 'ko')
 current_file_path = os.getcwd() + "./hi.mp3"
 tts.save(current_file_path)
 
-playsound(current_file_path)
+playsound(current_file_path) #실행 후 vscode에서 TTS읽음.
