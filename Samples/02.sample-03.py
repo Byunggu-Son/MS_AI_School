@@ -11,3 +11,15 @@ current_file_path = os.getcwd() + "./hi.mp3"
 tts.save(current_file_path)
 
 playsound(current_file_path) #실행 후 vscode에서 TTS읽음.
+
+
+# 환경 문제가 아니라면 간략하게
+
+# from gtts import gTTS
+# from playsound import playsound
+
+# text= "안녕하세요 마이크로소프트 에이아이 스쿨에 오신 것을 환영합니다."
+# tts = gTTS(text = text, lang= 'ko')
+# tts.save('hi.mp3')
+
+# playsound('hi.mp3')
