@@ -1,0 +1,13 @@
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\bin\Debug\SQLServer1.exe.config
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\bin\Debug\SQLServer1.exe
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\bin\Debug\SQLServer1.pdb
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.csproj.AssemblyReference.cache
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.csproj.SuggestedBindingRedirects.cache
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.frmMain.resources
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.Properties.Resources.resources
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.csproj.GenerateResource.cache
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.csproj.CoreCompileInputs.cache
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.exe
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.pdb
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.frmVIPMembers.resources
+C:\Users\foolpen\source\repos\CRUD_Sample1\SQLServer1\obj\Debug\SQLServer1.frmVIPMembersInput.resources
