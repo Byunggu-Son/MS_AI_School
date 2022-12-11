@@ -12,8 +12,8 @@ file_path = './2022.12/12.09_d48_image/data'
 #### 1. 파일 다운로드
 training_data = datasets.FashionMNIST(
     root= file_path,
-    train= True,
-    download= True,
+    train= False,
+    download= False,
     transform= ToTensor()
 )
 
@@ -57,6 +57,7 @@ labels_map = {
     7: "Sneaker",
     8: "Bag",
     9: "Ankle Boot",
+    10 : "Rings"
 }
 
 #### 4. 데이터 확인 ( 3 x 3 )
