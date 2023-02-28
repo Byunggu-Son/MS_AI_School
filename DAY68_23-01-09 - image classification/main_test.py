@@ -67,5 +67,6 @@ def test(model, test_loader, device):
         print("acc for {} image : {:.3f}%".format(total, acc))
     
 if __name__ == "__main__" :
-    model.load_state_dict(torch.load("./best_resnet50.pt", map_location=device))
+    #map_location=device쓰는 이유 : GPU환경에서 학습을 돌려도 test를 할 때는 device, 즉 CPU쪽에서 하는 것이기 때문. cuda였던게 다시 CPU로 변경이 된다.
+    model.load_state_dict(torch.load("./best_resnet50.pt", map_location=device)) 
     test(model, test_loader, device)

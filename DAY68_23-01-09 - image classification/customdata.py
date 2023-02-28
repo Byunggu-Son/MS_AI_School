@@ -28,7 +28,7 @@ class my_customdata(Dataset) :
         label = label_dict[label_tmep]
         # transform
         if self.transform is not None :
-            image = self.transform(image=image)["image"]# self.transform를 들어갈 때 이미지를 들어갈 때 필요하기 때문에.
+            image = self.transform(image=image)["image"]# self.transform를 들어갈 때, 이미지를 들어갈 때 필요하기 때문에.
 
         return image, label
     def __len__(self):

@@ -65,11 +65,12 @@ model.to(device)
 # model.to(device)
 # ##############################################################################
 # facebookresearch/deit:main','deit_tiny_patch16_224 모델 optimizer
-# optimizer = torch.optim.Adam(model.head.parameters(), lr=0.01) # 이 경우 특이하게 model.head단에서 parameter를 땡겨오게 된다.(종종 있음)
+
+
 # 다른 것들과 달리 구조가 다르기 때문. model.head 밑에는 RNN으로 되어 있어서 .head를 빼면 아까처럼 acc가 너무 낮은 것.
 # AdamW와는 상성이 잘 맞지 않았음.
 
-
+# optimizer = torch.optim.Adam(model.head.parameters(), lr=0.01) # 이 경우 특이하게 model.head단에서 parameter를 땡겨오게 된다.(종종 있음)
 criterion = LabelSmoothingCrossEntropy()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
