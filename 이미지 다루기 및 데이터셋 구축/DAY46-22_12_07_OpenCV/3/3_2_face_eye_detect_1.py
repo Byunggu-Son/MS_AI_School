@@ -12,8 +12,9 @@ img = cv2.imread('face.png')
 
 # 이미지 바운딩 박스
 # cascade의 경우는 그레이 스케일 이미지에서만 작동
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-faces = face_casacade.detectMultiScale(gray, 1.1, 4)
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # 이미지 흑백처리
+faces = face_casacade.detectMultiScale(gray, 1.1, 4) #이미지, 검색 윈도우 확대 비율(기본값은 1.1), 최소 검출횟수
+
 
 for (x,y,w,h) in faces:
     cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), 3)
@@ -72,7 +73,7 @@ if left_eye_y > right_eye_y:
     # direction = -1
 else:
     A = (left_eye_x, right_eye_y)
-    # direction = -1
+    # direction = 1
 
 # 두 눈 사이 점들 잇기
 
@@ -100,3 +101,27 @@ rotated = cv2.warpAffine(img, M, (w,h))
 
 cv2.imshow("face.png", rotated)
 cv2.waitKey(0)
+
+
+# for (x,y,w,h) in eyes:
+#     cv2.rectangle(roi_color, (x,y), (x+w,y+h), (0,255,0), 3)
+
+# '''
+# get eyes cor(좌표) -> cal degree -> make affine metrix -> image affine transform
+# '''
+
+# eyes = face_casacade.detectMultiScale(roi_gray, 1.1, 4)
+# # print(eyes)
+# index = 0
+
+# for (ex, ey, ew, eh) in eyes:
+#     if index == 0:
+#         eye_1 = (ex, ey, ew, eh)
+#     elif index ==1:
+#         eye_2 = (ex, ey, ew, eh)
+    
+#     cv2.rectangle(roi_color)
+
+
+# cv2.imshow('face box', face_img)
+# cv2.waitKey(0)
