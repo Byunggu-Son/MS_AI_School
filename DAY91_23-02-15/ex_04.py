@@ -55,7 +55,7 @@ class Exam(QMainWindow):
 
         action = cm.exec_(self.mapToGlobal(QContextMenuEvent.pos())) # 전체적인 맵의 위치를 저장해서 넘김. 추후 우클릭을 어느 위치에서 했냐에 따라 다른 메뉴나올 수 있도록
         if action == quit:
-            # qApp.quit() # 위의 QCoreApplication보다 더 간단한 방법으로는 qApp import한 후 이렇게 적어주면 끝!
+            qApp.quit() # 위의 QCoreApplication보다 더 간단한 방법으로는 qApp import한 후 이렇게 적어주면 끝!
 
 
 app = QApplication(sys.argv) 

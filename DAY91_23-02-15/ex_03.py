@@ -15,7 +15,7 @@ class Exam(QMainWindow):
 
     def initUI(self):
         self.statusBar() # 상태표시줄 추가. 최초 입력시 상태표시줄 생성 -> 한번 더 호출 시 상태표시줄 객체를 받아옴.
-        self.statusBar().showMessage("안녕하세요!")
+        self.statusBar().showMessage("YOLOv5 GUI!")
 
         menu = self.menuBar() # 메뉴바 생성
         menu_file = menu.addMenu('File') # 메인 그룹 생성
@@ -23,7 +23,7 @@ class Exam(QMainWindow):
 
         file_exit = QAction('Exit', self) # 메뉴 객체 생성
         file_exit.setShortcut('ctrl+Q') # 단축키 지정
-        file_exit.setStatusTip('누르면 잘가고~') # 상태표시줄에 표시될 문구.
+        file_exit.setStatusTip('종료') # 상태표시줄에 표시될 문구.
         new_txt = QAction('텍스트 파일', self)
         new_py = QAction('파이썬 파일', self)
 
