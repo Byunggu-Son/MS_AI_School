@@ -5,7 +5,7 @@ from xml.etree.ElementTree import parse
 
 # PATH = "C:/Users/user/Documents/04.project"
 PATH = "D:/yolov5-master/yolov5-master/dataset_birds_o"
-label_dict = {'drone' : 0, 'bird' : 1 , 'birds' : 2, 'airplane': 3 , 'helicopter' : 4, 'balloon' : 5}
+label_dict = {'drone' : 0, 'bird' : 1 , 'airplane': 2 , 'helicopter' : 3, 'balloon' : 4}
 def ex02_main():
     """xml 1 ~ 5 같이 여러 개 생기면 찾는 함수"""
     
